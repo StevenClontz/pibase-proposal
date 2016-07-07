@@ -20,6 +20,8 @@
 \bibliographystyle{plain}                                              %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\parskip0.5em
+
 %PUT YOUR MACROS HERE
 
 \usepackage{amsmath}
@@ -30,7 +32,6 @@
 \begin{document}
 
 \setcounter{page}{1}
-%\include{NSFdata}
 
   \setcounter{page}{1}
 \include{NSFsumm}
@@ -39,27 +40,17 @@
  \setcounter{page}{1}
 \include{NSFdesc}
 
+ \setcounter{page}{1}
+  \bibliography{bib}
+
 
  \setcounter{page}{1}
-\include{NSFrefs}
-
-
- \setcounter{page}{1}
- %%%%%%%%% REFERENCES -- no limit
-
- % this should include only items referenced in the project description
- % it is not a bibliography of related reading.
-
- % Each reference must include the names of all authors (in the same
- % sequence in which they appear in the publication), the article and
- % journal title, book title, volume number, page numbers, and year of
- % publication. If the document is available electronically, the website
- % address also should be identified
+\include{NSFbio}
 
 
 
 
- \bibliographystyle{plain}
- \bibliography{bib}
+
+
 
 \end{document}
