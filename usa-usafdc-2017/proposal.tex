@@ -1,0 +1,513 @@
+%%% Please see https://math.mit.edu/services/grants/index.php for information and instructions
+%%%%%%%%% MASTER -- compiles the 4 sections
+
+\documentclass[11pt]{article}
+
+
+\usepackage[letterpaper, margin=1in]{geometry}
+
+
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\chead{USAFDC GRANT APPLICATION}
+\cfoot{Page \thepage}
+
+\parskip0.5em
+
+%PUT YOUR MACROS HERE
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[hidelinks]{hyperref}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+% \begin{center}
+%   \textbf{
+%   UNIVERSITY OF SOUTH ALABAMA FACULTY DEVELOPMENT COUNCIL
+%   (USAFDC) PROPOSALS
+%   }
+% \end{center}
+%
+% INSTRUCTIONS:  Please refer to the General Guidelines for information on preparing your proposal.
+% Submit your completed proposal signed by you, your department chair, and dean to the Graduate School Office, AD 300.
+%
+%
+% \section{PROPOSAL IDENTIFICATION}
+%
+% \begin{center}
+% \begin{tabular}{ccc}
+%   & \textbf{NAME} & \textbf{DEPARTMENT} \\
+% \textbf{Principal Investigator (PI)} &
+% \underline{Steven Clontz} &
+% \underline{Mathematics and Statistics}
+% \end{tabular}
+% \end{center}
+
+% A. Title of Proposal:
+%
+% \hspace{3em}
+% \underline
+% {Enhancing Research and Cyberinfrastructure in Set-Theoretic Topology}
+%
+% B. Project Period:
+%
+% \hspace{3em}
+% FROM: \underline{2017 May 1}
+% \hspace{2em}
+% TO: \underline{2018 August 31}
+%
+% C. Amount Requested:
+%
+% \hspace{3em}
+% Total Project Cost:
+% \underline{\$0}
+%
+% \hspace{3em}
+% Other Sources:
+% \underline{\$0}
+%
+% \hspace{3em}
+% \textbf{Requested from USAFDC:
+% \underline{\$0}}
+%
+%
+% \newpage
+%
+% \section{Principal Investigator (PI):}
+%
+% Agrees to accept responsibility for the scientific and technical conduct of the proposed project, for provision of the required progress and final reports, and will obtain approval of the appropriate committee, as indicated below, and adhere to applicable regulations for projects involving any of the following:
+%
+% \begin{center}\footnotesize
+% \begin{tabular}{|c|l|c|c|c|}
+%   \hline
+%   && Needed & Submitted & Approved \\\hline
+%   A. & Radiation Safety & N/A && \\\hline
+%   B. & Human Subjects & N/A && \\\hline
+%   C. & Animal Use & N/A && \\\hline
+%   D. & Bio Hazardous Matierals & N/A && \\\hline
+%   E. & Export Controls & N/A && \\\hline
+%   F. & Other Environmental or Chemical Hazards (Describe Below) & N/A && \\\hline
+% \end{tabular}
+% \end{center}
+%
+% Contact Dusty Layton, Director Research Compliance Assurance, CSAB 128, with any questions on items A-F.
+%
+% Note: I understand that if my proposal is recommended for funding, the award will be conditional until the appropriate approvals above have been received and provided by me to the Graduate School Office.
+
+\setcounter{page}{3}
+
+\centerline{\bf\Large
+ABSTRACT
+}
+
+\textit{Abstract your proposed project (500-word limit) below using non-technical language easily understandable to persons outside your field.  Remember that a diverse group of faculty will be reviewing your proposal.}\vspace{2em}
+
+The Encyclopedic Database of Topological Spaces, also known as the \(\pi\)-Base and currently hosted at http://topology.jdabbs.com, is an open-source web application with the ability to cross-reference topological spaces, their properties, and the theorems which connect them. As an example, once a user has logged that the closed interval of real numbers between 0 and 1 is ``compact'' and ``Hausdorff'', and EDTS automatically deduces that the space is also ``normal'', and includes this space in search results for normal topological spaces. Historically, researchers memorized hundreds of various spaces, properties, and theorems from papers spread across numerous journal articles, but with our body of knowledge expanding exponentially as time progresses, a robust EDTS would facilitate efficient research by eliminating the difficulty of memorizing or finding such results in the ever-growing and ever-fragmenting literature. For comparison, the similar and more mature On-Line Encyclopedia of Integer Sequences, launched in its current form in late 2010, has been cited in over 5002 works. The applicant will use support from this award to collaborate with fellow researcher Ziqin Feng (Auburn University) and EDTS's main programmer James Dabbs to polish the EDTS prototype for use in production by active researchers in topology. Ultimately, the investigator wishes to establish EDTS as a leading tool in researching and cataloging topological spaces and objects in other mathematical categories; by developing this prototype to a minimally viable product for active use by researchers, the investigator’s competitiveness for external funding to support the project will be increased.
+
+\newpage
+
+\centerline{\bf\Large
+DETAILED BUDGET
+}
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+  \hline
+  & USAFDC & Other Sources & Total Anticipated Budget \\\hline
+  Books &&& \\\hline
+  Copying, Printing &&& \\\hline
+  Equipment &&& \\\hline
+  Postage &&& \\\hline
+  Professional Fees** &&& \\\hline
+  Software & \$100 && \$100 \\\hline
+  \parbox{1.5in}{Student Wages*\\ at \$17.50 per Hr} & \$2100 && \$2100 \\\hline
+  Supplies, Consumables &&& \\\hline
+  Telephone &&& \\\hline
+  Travel & \$2505 && \$2505 \\\hline
+  Other &&& \\\hline\hline
+  \textbf{TOTAL} & \textbf{\$4705} && \textbf{\$4705} \\\hline
+\end{tabular}
+\end{center}
+
+* In the budget justification respond to Item 10 of general guidelines.
+
+** Consulting or other professional services that are not available through the University.
+
+\newpage
+
+
+
+
+\centerline{\bf\Large
+BUDGET JUSTIFICATION (Required)
+}
+
+\textit{Provide a line-by-line justification for each item in the budget, including details of calculated totals as well as how each is necessary for execution of the project.  Itemize equipment and detail travel. For proposals that will take longer than one year to accomplish, the budget and all project plans should fully reflect the timeline required.  Use additional pages as necessary.}\vspace{2em}
+
+\textbf{Software:} \textbf{\$120} is requested to cover hosting costs for the EDTS website on a Digital Ocean cloud server for two years. \textbf{\$80} is requested to obtain the domain name edts.io (or similar) for two years.
+
+\textbf{Student Wages:} One graduate student will be hired for Summer 2018 to assist the investigator with the auditing and expansion of the EDTS database. This student will be compensated at \$17.50 per hour (as limited by the proposal preparation guidelines), 15 hours per week, for 8 weeks, totaling \textbf{\$2100}. The work done by this student supports faculty research by filtering through the trivial (but time-consuming) data entry tasks, freeing the investigator to answer the non-trivial questions associated with this data entry (see Proposed Work Plan for more details).
+
+\textbf{Travel:} The investigator will travel to Auburn, AL for three days during May 2017 and three days during May 2018 to meet with collaborator Prof. Ziqin Feng of Auburn University to develop a plan for auditing the EDTS database for use in cutting-edge research and marketing the tool to the community of researchers, including a selection of appropriate literature to seed the database initially.  Compensation for mileage is estimated at \(\$250\times2=\,\)\textbf{\$500}, and six days of meals is estimated at \textbf{\$330}. (Accommodations will be provided by Dr. Feng.)
+
+The investigator will host the EDTS developer James Dabbs for one week during Summer 2017 to collaborate on the EDTS source code, making the necessary backend and user interface changes to ready it for production on a new domain and server for active use by researchers in topology. Airfare from Washington D.C. to Mobile is estimated at \textbf{\$700}, and five days of meals is estimated at \textbf{\$275}. Hotel accommodations for six nights are estimated at \textbf{\$700}.
+
+\newpage
+
+
+
+
+\centerline{\bf\Large
+Proposed Work Plan
+}
+
+\textit{Complete the following sections. Adjust the space provided as necessary but the work plan may not exceed five pages, excluding works cited.  Supporting material may be attached as appendices but this is not necessarily encouraged.  Please be reminded that the work plan should be easily understood by a broad academic audience.}
+
+
+\section*{A. Introduction}
+
+\subsection*{1. State objective(s) of proposed work.}
+
+The main objective of this project is to mature the \(\pi\)-Base web application
+for cataloging topological spaces, theorems, and properites from a casual
+side-project into a robust research tool for mathematicians in the fields of
+general and set-theoretic topology, an Encylopedic Database of Topological
+Spaces (EDTS). The current application, hosted at
+http://topology.jdabbs.com/, is generally recieved well as a novelty by
+researchers, but has several flaws preventing it from being used as a
+reference in serious research.
+
+The most glaring of these is a lack of
+peer-review; the \(\pi\)-Base database is currently populated by a mix of
+results from
+the literature and unverified data from unvetted users. This will be
+corrected by auditing the contents of the database to reference peer-reviewed
+sources where possible, and flagging other entries as unverified.
+In addition, several important data points from the literature are not
+represented in the database, leaving too many holes for it to serve as
+an efficient resource resource for most researchers.
+To that end, the database will be expanded to a critical mass that meets the
+needs of several specific researchers in several niches of set-theoretic
+topology, who will be recruited by the investigator and his colleague Prof.
+Ziqin Feng of Auburn University. To support these necessary enhancements,
+the investigator will collaborate with \(\pi\)-Base developer James Dabbs to
+write the code required for these new features and user interface improvements.
+
+In addition to revolutionizing the way research in set-theoretic and general
+topology is done, an additional objective of the project is to develop
+a mechanism for finding suitable undergraduate research projects in those
+fields. Research in mathematics typically involves finding logical proofs or
+counter-examples to mathematical conjectures which have yet to be solved. Due
+to this, it is often difficult to find
+accessible problems for undergraduates which would constitute
+truly original research. Most problems on the mind of topological researchers
+that could be tackled by undergraduates
+are usually solved trivially or at least in short time by mathematicians with
+more experience. However, once the EDTS database reflects the cutting-edge
+of topological research, it will be able to
+automatically produce open questions that are
+truly unknown, yet have not been considered by PhD researchers. Of course,
+what makes a question in topology ``interesting'' to researchers is determined
+by humans working in the field, so the majority of these
+computer-generated open questions
+would not be attractive to more advanced researchers, even those that are
+easily seen to not be difficult to solve. Such questions
+would be perfect for
+creating undergraduate projects or theses that allow students to work on
+truly original research in a field traditionally inaccessible to students
+without graduate coursework in the area.
+
+
+
+
+
+
+
+\subsection*{2. Background:  Review scholarly work in the area and its relationship to the proposed study.}
+
+In 1970, Steen and Seebach published a handbook
+covering \(143\) important examples of topological spaces, entitled
+\textit{Counterexamples in Topology} \cite{MR1382863}. Renowned researcher
+Mary Ellen Rudin wrote the following in her review \cite{MR1536430}
+of the original text.
+``\textit{Counterexamples in Topology} is a valuable addition to the small
+collection of books I keep on the shelf in my office.'' ``The book is
+completely unique; no other book now in print serves its purpose.''
+Recognizing the maze of counterexamples littered throughout the
+field of set-theoretic topology, Rudin suggested that not only students could
+benefit from the text as a guidebook, but
+``Even those of us who work exactly in the area will profit from
+its organization.''
+
+Several other \textit{Counterexamples} texts
+in the tradition of Stein and Seebach have been published in several fields,
+including (but not limited to) real analysis \cite{MR1256489}, differential
+equations \cite{MR1113487}, probability \cite{MR930671}, and
+graph theory \cite{MR0491272}.
+The utility of such books is evident to the working mathematician, as it is
+invaluable to have a convenient resource that efficently
+answers questions of the following forms:
+\begin{itemize}
+  \item ``Does the object \(T\) have property \(X\)?''
+  \item ``Do all objects with properties \(\{A,B,C\}\) also have properties
+          \(\{X,Y,Z\}\)?''
+  \item ``Do we already know of an object that satisifes properties
+          \(\{A,B,C\}\)?''
+\end{itemize}
+
+The limitations of these publications are just as evident. When entered into
+the existing \(\pi\)-Base prototype and automatically checked by the computer,
+several non-obvious errors were unearthed in
+\textit{Counterexamples in Topology}. This is to be
+expected in such an ambitious work, but certainly would be a frustrating
+discovery for a mathematican relying on the faulty data. A computer-verified
+resource such as EDTS would prevent such inconsistencies from ever appearing
+in the database.
+
+Furthermore, over \(45\) years later, \textit{Counterexamples in Topology}
+is no longer on the cutting edge of research. It was originally written with
+the assistance of an NSF-funded undergraduate research experience, and
+represented the most recent developments of the time. However, as a book,
+it is not a living document and cannot evolve with the active community of
+research to continually serve its needs. The EDTS will continually be updated
+and expanded, allowing it to serve researchers of topology for years to come.
+In addition, the software that will power EDTS will be written in a generic
+fashion, so that it may similarly be used to power databases for literally
+any category of mathematics, including those with existing books and databases
+of counterexamples, and those which as of yet do not.
+
+The benefits of such a robust database are already known in another field of
+mathematics. The On-Line Encyclopedia of Integer Sequences, hosted at
+https://oeis.org, is a frequently used and cited resource in number theory
+and its related fields.
+Since the site launched in its current form in late 2010, the OEIS
+has been cited in over 5002 works \cite{OEIScitations}. The success of OEIS
+is due to its ease of access and use by both researchers and students of
+mathematics, its robust referencing system connecting the database to the
+literature, and the community that maintains it. It is the investigator's
+expectation that an enhanced Encylopedic Database of Topological Spaces can
+acheive a similar level of success and notability by following the example
+of OEIS.
+
+
+
+
+
+
+
+\subsection*{3. Preliminary work:  Describe any work you have begun that relates to the project and how the proposed work validates or extends that work.}
+
+The \(\pi\)-Base protoype currently hosted at http://topology.jdabbs.org
+represents the preliminary work done for this project by the investigator,
+its developer, and the small community that has contributed to it
+over the past few years of its existence (similar to Wikipedia, but without
+the sizable userbase of content experts). Specifically, the investigator
+has contributed to the project by entering data related to his own research
+in set theoretic topology, for example
+\cite{MR3467819,MR3482726,MR3227201,MR3438747}. Using this prototype has
+allowed the investigator to cleanly catalog the raw data associated with
+the results of his research and generate open questions that have yet to be
+solved by those results; for example, despite the theorem
+http://topology.jdabbs.com/theorems/168
+(discussed in \cite{clontzMengerGamePreprint}) which states that all
+\(2\)-Markov-Winning Menger spaces are Winning Menger, there is no known
+counter-example to the converse: a Winning Menger space which isn't also
+\(2\)-Markov-Winning Menger.
+
+Despite its promise, the utility of the existing prototype is limited by the
+current functionality of the site and the limited involvement by the broader
+community of researchers. The proposed work will allow the prototype to
+mature into a robust web applicaiton that immediately communicates its
+utility to acitve researchers. Combined with the proposed improvments to the
+\(\pi\)-Base software and user interface, the recruitment of leading
+researchers to contribute and maintain the database by the investigator and
+Dr. Feng will establish the new EDTS application as a primary resource for
+researchers to find and cite research results in topology. After its
+success is established, the EDTS software can then be expanded to serve other
+fields of mathematical research as well.
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{4. Significance:  State the potential importance of the proposed work to the field of study.  Also, please attach a letter of support from your department chair (or equivalent position) evaluating the merit of the proposal.}
+
+asdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{B. Methodology}
+
+\subsection*{1.	Describe in detail your proposed work or approach to accomplishing the objective(s).}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{2. If data are to be collected, outline the means by which they will be analyzed.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{3. Timeline.  Indicate the proposed timeline for project completion. For projects exceeding one year (12 calendar months), provide justification.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{C. Anticipated outcomes:}
+
+\subsection*{1. Include names of probable journals, publishers, etc.  A final written report and a presentation of project results at the Annual Research Forum are required; failure to comply may jeopardize future USAFDC funding opportunities.}
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{2.	Describe plans for extending the project via external support, if any. (The USA Office of Research can provide help in identifying possible sources of external support relative to this proposal.)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{D.	Facilities and Other Resources:}
+
+\textit{List the facilities available for this project, departmental contributions, and other support for the project not listed in the budget and budget justification pages.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{E.	List outcomes and dates of USAFDC grants received in past five years.}
+
+\textit{Provide titles and dates.  List date and title of USAFDC Spring Forum poster presentation.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{F.	Describe how the proposed project differs from any previous USAFDC-funded project.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{G. List of references cited in the grant application.}
+
+\bibliography{../bib}
+
+
+
+% BIOGRAPHICAL SKETCH
+% Do not attach a resume. Use the guidelines at:  http://www.southalabama.edu/departments/eforms/graduateschool/biosketch.docx
+
+
+
+\end{document}
